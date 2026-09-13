@@ -23,7 +23,7 @@ XJTU运动打卡自动化脚本
 版本: 2.0
 最后更新: 2025-07-20
 """
-import os
+
 import requests
 import logging
 import time
@@ -48,11 +48,11 @@ class Config:
     """
 
     # ========== 用户信息配置 ==========
-    USER = os.environ["XJTU_USER"]  
-    PASSWORD = os.environ["XJTU_PASSWORD"] # 登录密码
+    USER = os.environ["XJTU_USER"]
+    PASSWORD = os.environ["XJTU_PASSWORD"]
 
     # ========== 地理位置配置 ==========
-  
+    # 涵英楼北草坪坐标（可根据实际锻炼地点修改）
     LONGITUDE = 108.654387  # 经度
     LATITUDE = 34.257229  # 纬度
 
